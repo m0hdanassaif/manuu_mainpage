@@ -1,0 +1,176 @@
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    /* Adding the background to entire page */
+    background-image: linear-gradient(#dee1edb3,#0b280741), url(MANUU.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+  }
+  nav{
+    display: flex;
+    padding: .5% 1%;
+    justify-content: space-between;
+    align-items: center;
+    
+ 
+
+  }
+  nav img{
+    width: 210px;
+    height: 100px;
+    /* background-color: red; */
+    /* background-image: linear-gradient(#dee1edb3,#0b280741) */
+    
+  }
+ 
+  .nav-links{
+    flex: 1;
+    text-align: right;
+    /* background-color: green; */
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: .5% .5%;
+    position: relative;
+  }
+  .nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 4px 2px 13px rgba(0,0,0,0.78);
+  
+  }
+  /* Hover effects for the li */
+  .nav-links ul li::after{
+    content: ' ';
+    width: 0%;
+    height:2px;
+    background:#26542bd3;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  .text-box{
+    width: 90%;
+    color: white;
+    /* position to the center of pages */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 50px;
+  }
+  /* .text-box p{
+    margin: 10px 0px 40px;
+    font-size: 14px;
+    color: white;
+  } */
+  .hero-btn{
+    /* display: inline-block; */
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+  }
+  .hero-btn:hover{
+    color:#fff;
+    background-color: #3d7e45;
+    border: 1px solid #3d7e45;
+    transition: 1s;
+  }
+  /* Icon hidden for larger screen sizes */
+  nav .fa{
+    display: none;
+  }
+  @media(max-width: 700px){
+    .text-box h1{
+      font-size: 20px;
+    }
+    .nav-links ul li{
+      display: block;
+    }
+    .nav-links{
+      position: absolute;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right:-200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .nav-links ul{
+      padding: 30px;
+    }
+  }
+  /* Course Styles */
+  .course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .course h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  .course p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+  }
+  .course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
